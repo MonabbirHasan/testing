@@ -1,0 +1,457 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*        
+font-family: 'Bebas Neue', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header {
+            position: fixed;
+            z-index: 10000;
+            width: 100%;
+            background: transparent;
+            padding: 0;
+            overflow: hidden;
+            transition: .5s all !important;
+        }
+
+        header.active {
+            padding: 10px 0px;
+            background: linear-gradient(to left, #5f27cd, #f368e0);
+            transition: .5s !important;
+
+        }
+        .owl-carousel i {
+            position: absolute;
+            display: flex;
+            background: #c7ecee;
+            box-shadow: 0 0 5px #34e7e4,
+                0 0 8px #34e7e4,
+                0 0 12px #34e7e4,
+                0 0 14px #34e7e4,
+                0 0 16px #34e7e4;
+            pointer-events: none;
+            border-radius: 50%;
+            animation: buble 20s linear infinite;
+        }
+
+        @keyframes buble {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-1200%);
+            }
+        }
+
+        .owl-carousel {
+            overflow: hidden;
+        }
+
+        .navbar-nav .nav-item ion-icon {
+            display: inline-block;
+            padding: 5px;
+            margin: 0px 20px;
+            font-size: 30px;
+            pointer-events: none;
+            z-index: 1;
+            position: relative;
+            font-weight: 900;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+        }
+
+        /*
+        .navbar-nav .nav-item:hover{
+            background: red;
+        }
+*/
+        .navbar-nav {
+            position: relative;
+        }
+
+        .marker {
+            position: absolute;
+            bottom: 8px;
+            background: #000;
+            height: 50px;
+            z-index: -1;
+            transition: .5s ease-in-out;
+        }
+
+        .navbar-nav .nav-item ion-icon:hover {
+            color: #fff;
+        }
+
+        /*banner section start here*/
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background: url('../image/imgvalu.jpg') no-repeat;
+            background-blend-mode: soft-light;
+            filter: brightness(0.7);
+        }
+
+        .banner-content {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 20px 0px;
+            width: 600px;
+
+        }
+
+        .banner-content h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 40px;
+            text-transform: capitalize;
+            color: #000;
+            font-weight: 400;
+        }
+
+        .comment {
+            padding: 20px;
+            backdrop-filter: blur(30px);
+        }
+
+        .comment span {
+            font-size: 25px;
+            color: aliceblue;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+            padding: 0px 5px;
+        }
+
+        /*        news-section start here*/
+        .news-section {
+            width: 100%;
+            padding: 80px 0px;
+        }
+
+        .page-title h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: capitalize;
+            padding: 20px 0px;
+            letter-spacing: 1px;
+            color: #000;
+        }
+
+        .post-content {
+            padding: 20px 0px;
+        }
+
+        .post-content .post {
+            box-shadow: -2px -2px 20px #eee, -2px -2px 20px #eee, 2px 2px 20px #eee, 2px 2px 20px #eee;
+            background: #fff;
+            cursor: pointer;
+            padding: 20px 10px;
+        }
+
+        .post-content .post img:hover {
+            filter: saturate(0.5);
+        }
+
+        .post .post-info {
+            padding: 10px 0px;
+        }
+
+        .post-info .social span {
+            padding: 0px 5px;
+            color: #000;
+            font-size: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        .post-info .social span:hover {
+            color: aqua;
+        }
+
+        .post-info h3 {
+            font-size: 22px;
+            text-transform: capitalize;
+            padding: 10px 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .post-info h5 {
+            font-size: 15px;
+            text-transform: capitalize;
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 10px;
+        }
+
+
+
+        /*        post-topick section start here*/
+
+        .post-topick {
+            width: 100%;
+            padding: 60px 0px;
+            background: #80dee52b;
+        }
+
+        .page-title {
+            padding-bottom: 40px;
+        }
+
+        .topic-content {
+            padding: 20px 0px;
+        }
+
+        .topic-content .topic-items {
+            background: #fff;
+            box-shadow: -5px -5px 15px #eee, 5px 5px 15px rgba(0, 0, 0, .1);
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px 0px;
+        }
+
+        .topic-items .topic-left .date-box {
+            position: absolute;
+            color: aliceblue;
+            font-size: 20px;
+            background: #000;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .topic-items .topic-left img {
+            height: 250px;
+        }
+
+        .topic-right span {
+            font-size: 20px;
+            font-weight: 900;
+            color: #ff3030;
+            margin: 0px 5px;
+            padding: 0px 5px;
+            cursor: pointer;
+        }
+
+        .topic-right span:hover {
+            color: #44bd32;
+        }
+
+        .topic-right h4 {
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 600;
+            padding: 10px 0px;
+            color: #000;
+        }
+
+        /*        feshion-section start here*/
+        .feshion-section {
+            width: 100%;
+            padding: 60px 0px;
+        }
+
+        .feshan-content {
+            padding: 20px 0px;
+        }
+
+        .fishan-items {
+            background: #fff;
+            box-shadow: -5px -5px 15px #eee, 5px 5px 15px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            padding: 5px 0px;
+            margin-top: 10px;
+        }
+
+        .fishan-items .feshon-info .date {
+            background: #eee;
+            position: absolute;
+            transform: translate(10px, -29px);
+            color: #000;
+            font-size: 15px;
+            text-transform: capitalize;
+            padding: 5px;
+        }
+
+        .fishan-items .feshon-info h4 {
+            padding: 10px 5px;
+        }
+
+        .fishan-items .feshon-info p {
+            padding: 0px 5px;
+        }
+
+        .fishan-items .feshon-info .social span {
+            font-size: 20px;
+            margin-left: 5px;
+            padding: 10px;
+            color: #000;
+            font-weight: bolder;
+        }
+
+        .fishan-items .feshon-info .social span:hover {
+            color: #ff2020;
+        }
+/*about bloger team section start here*/
+.about-section{
+    padding: 80px 0px;
+    width: 100%;
+}
+.page-title h2{
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #000;
+}
+.slider-box h5{
+    font-size: 20px;
+    text-transform: capitalize;
+    color:#000;
+    font-weight: 700;
+    padding: 10px 0px;
+    margin: auto;
+    text-align: center;
+}
+.slider-box p{
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 400;
+    text-align: center;
+}
+.slider-box img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: 2px solid #22eb8e;
+}
+.about-left{
+    padding: 5px;
+}
+.about-left p{
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+}
+/*footer style start here*/
+.footer{
+    width: 100%;
+    padding: 60px 0px;
+    background: black;
+}
+.footer-content .footer-items h5{
+font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 0;
+    text-transform: capitalize;
+    
+}
+.footer-content h3{
+    color: aliceblue;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.footer-content h3 span{
+    font-size: 20px;
+    color: red;
+}
+.footer-items p{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #ffffff;
+}
+.footer-items .input-box{
+    padding: 40px 0px;
+}
+.footer-items .input-box input{
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 5px 20px;
+    background: transparent;
+    border: 3px solid #FC427B;
+    outline: none;
+    border-radius: 30px;
+}
+.footer-items .input-box input[type="submit"]{
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    outline: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: none;
+    background: linear-gradient(to left,#1B9CFC,#FC427B);
+}
+.footer-items .img-box{
+    padding: 30px 0px;
+}
+.footer-items .img-box img{
+    margin-top: 5px;
+    border: 2px solid #FC427B;
+}
+.icon{
+    padding: 40px 0px;
+}
+.icon span{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.icon span:hover{
+    background: #eee;
+    box-shadow: 0 0 5px #333;
+    color: #000;
+}
+.fishan-items .feshon-info h4{
+    font-size: 16px;
+    padding: 10px ;
+}
+/*video-box start here*/
+.video-box{
+    width: 100%;
+    padding: 80px 0px;
+}
+.video-content{
+    padding:10px;
+}
+.video-content .video-items{
+    padding: 5px;
+}
+.video-content .video-items p{
+ font-size: 16px;
+    text-align: left;
+    text-transform: capitalize;
+    padding:20px 0;
+    line-height: 20px;
+}
+
+
+
